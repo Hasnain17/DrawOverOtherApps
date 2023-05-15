@@ -1,22 +1,14 @@
 package com.devsky.task.drawoverotherapps
 
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.provider.Settings;
-import android.widget.Toast
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
+
 
 
 class MainActivity : AppCompatActivity() {
-
-    companion object {
-        private const val SYSTEM_ALERT_WINDOW_PERMISSION_CODE = 100
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,7 +21,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    // method for starting the service
     fun startService() {
         // check if the user has already granted
         // the Draw over other apps permission
